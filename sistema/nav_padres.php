@@ -30,46 +30,46 @@
                     
                            switch ($elalumno){
                                     case 1:
-                                        echo '<li><a href="chat/1/chats.php?id=1">Teresita Nava Bola&nacute;os</a></li>';
+                                        echo '<li><a href="chat/all/chats.php?id=1">Teresita Nava Bola&nacute;os</a></li>';
                                         break;
                                     case 2:
-                                        echo '<li><a href="chat/2/chats.php?id=2">Guadalupe Fuentes Guti&eacute;rrez</a></li>';
+                                        echo '<li><a href="chat/all/chats.php?id=2">Guadalupe Fuentes Guti&eacute;rrez</a></li>';
                                         break;
                                     case 3:
-                                        echo '<li><a href="chat/19/chats.php?id=19">MIRIAM ALETIA GARCIA ESTARDA</a></li>';
-                                        echo '<li><a href="chat/20/chats.php?id=20">REINA AURORA CUEVAS PICHARDO</a></li>';
+                                        echo '<li><a href="chat/all/chats.php?id=19">MIRIAM ALETIA GARCIA ESTARDA</a></li>';
+                                        echo '<li><a href="chat/all/chats.php?id=20">REINA AURORA CUEVAS PICHARDO</a></li>';
                                         break;
                                     case 4:
-                                        echo '<li><a href="chat/19/chats.php?id=19">MIRIAM ALETIA GARCIA ESTARDA</a></li>';
-                                        echo '<li><a href="chat/20/chats.php?id=20">REINA AURORA CUEVAS PICHARDO</a></li>';
+                                        echo '<li><a href="chat/all/chats.php?id=19">MIRIAM ALETIA GARCIA ESTARDA</a></li>';
+                                        echo '<li><a href="chat/all/chats.php?id=20">REINA AURORA CUEVAS PICHARDO</a></li>';
                                         break;
                                     case 5:
-                                        echo '<li><a href="chat/19/chats.php?id=19">MIRIAM ALETIA GARCIA ESTARDA</a></li>';
-                                        echo '<li><a href="chat/20/chats.php?id=20">REINA AURORA CUEVAS PICHARDO</a></li>';
+                                        echo '<li><a href="chat/all/chats.php?id=19">MIRIAM ALETIA GARCIA ESTARDA</a></li>';
+                                        echo '<li><a href="chat/all/chats.php?id=20">REINA AURORA CUEVAS PICHARDO</a></li>';
                                         break;
                                     case 6:
-                                        echo '<li><a href="chat/21/chats.php?id=21">MIRNA GABRIELA ALVAREZ SANCHEZ</a></li>';
-                                        echo '<li><a href="chat/22/chats.php?id=22">BELEM FUENTES GUTIERREZ</a></li>';
+                                        echo '<li><a href="chat/all/chats.php?id=21">MIRNA GABRIELA ALVAREZ SANCHEZ</a></li>';
+                                        echo '<li><a href="chat/all/chats.php?id=22">BELEM FUENTES GUTIERREZ</a></li>';
                                         break;
                                     case 7:
-                                        echo '<li><a href="chat/21/chats.php?id=21">MIRNA GABRIELA ALVAREZ SANCHEZ</a></li>';
-                                        echo '<li><a href="chat/22/chats.php?id=22">BELEM FUENTES GUTIERREZ</a></li>';
+                                        echo '<li><a href="chat/all/chats.php?id=21">MIRNA GABRIELA ALVAREZ SANCHEZ</a></li>';
+                                        echo '<li><a href="chat/all/chats.php?id=22">BELEM FUENTES GUTIERREZ</a></li>';
                                         break;
                                     case 8:
-                                        echo '<li><a href="chat/21/chats.php?id=21">MIRNA GABRIELA ALVAREZ SANCHEZ</a></li>';
-                                        echo '<li><a href="chat/22/chats.php?id=22">BELEM FUENTES GUTIERREZ</a></li>';
+                                        echo '<li><a href="chat/all/chats.php?id=21">MIRNA GABRIELA ALVAREZ SANCHEZ</a></li>';
+                                        echo '<li><a href="chat/all/chats.php?id=22">BELEM FUENTES GUTIERREZ</a></li>';
                                         break;
                                     case 9:
-                                        echo '<li><a href="chat/23/chats.php?id=23">GUADALUPE FUENTES GUTIERREZ</a></li>';
-                                        echo '<li><a href="chat/24/chats.php?id=24">LUCIA RENEE MARTINEZ LUGO</a></li>';
+                                        echo '<li><a href="chat/all/chats.php?id=23">GUADALUPE FUENTES GUTIERREZ</a></li>';
+                                        echo '<li><a href="chat/all/chats.php?id=24">LUCIA RENEE MARTINEZ LUGO</a></li>';
                                         break;
                                     case 10:
-                                        echo '<li><a href="chat/23/chats.php?id=23">GUADALUPE FUENTES GUTIERREZ</a></li>';
-                                        echo '<li><a href="chat/24/chats.php?id=24">LUCIA RENEE MARTINEZ LUGO</a></li>';
+                                        echo '<li><a href="chat/all/chats.php?id=23">GUADALUPE FUENTES GUTIERREZ</a></li>';
+                                        echo '<li><a href="chat/all/chats.php?id=24">LUCIA RENEE MARTINEZ LUGO</a></li>';
                                         break;
                                     case 11:
-                                        echo '<li><a href="chat/23/chats.php?id=23">GUADALUPE FUENTES GUTIERREZ</a></li>';
-                                        echo '<li><a href="chat/24/chats.php?id=24">LUCIA RENEE MARTINEZ LUGO</a></li>';
+                                        echo '<li><a href="chat/all/chats.php?id=23">GUADALUPE FUENTES GUTIERREZ</a></li>';
+                                        echo '<li><a href="chat/all/chats.php?id=24">LUCIA RENEE MARTINEZ LUGO</a></li>';
                                         break;
                                     case 12:
                                         echo '<li><a href="chats.php?id=6">Mar&iacute;a Guadalupe Atilano Bautista</a></li>';
@@ -81,52 +81,52 @@
                                         echo '<li><a href="chats.php?id=6">Mar&iacute;a Guadalupe Atilano Bautista</a></li>';
                                         break;
                                     case 15:
-                                        echo '<li><a href="chat/25/chats.php?id=25">LILIA ADRIANA LOPEZ BENITEZ</a></li>';
-                                        echo '<li><a href="chat/26/chats.php?id=26">LAURA ALEJANDRA ESTRADA VAZQUEZ</a></li>';
+                                        echo '<li><a href="chat/all/chats.php?id=25">LILIA ADRIANA LOPEZ BENITEZ</a></li>';
+                                        echo '<li><a href="chat/all/chats.php?id=26">LAURA ALEJANDRA ESTRADA VAZQUEZ</a></li>';
                                         break;
                                     case 16:
-                                        echo '<li><a href="chat/25/chats.php?id=25">LILIA ADRIANA LOPEZ BENITEZ</a></li>';
-                                        echo '<li><a href="chat/26/chats.php?id=26">LAURA ALEJANDRA ESTRADA VAZQUEZ</a></li>';
+                                        echo '<li><a href="chat/all/chats.php?id=25">LILIA ADRIANA LOPEZ BENITEZ</a></li>';
+                                        echo '<li><a href="chat/all/chats.php?id=26">LAURA ALEJANDRA ESTRADA VAZQUEZ</a></li>';
                                         break;
                                     case 17:
-                                        echo '<li><a href="chat/25/chats.php?id=25">LILIA ADRIANA LOPEZ BENITEZ</a></li>';
-                                        echo '<li><a href="chat/26/chats.php?id=26">LAURA ALEJANDRA ESTRADA VAZQUEZ</a></li>';
+                                        echo '<li><a href="chat/all/chats.php?id=25">LILIA ADRIANA LOPEZ BENITEZ</a></li>';
+                                        echo '<li><a href="chat/all/chats.php?id=26">LAURA ALEJANDRA ESTRADA VAZQUEZ</a></li>';
                                         break;
                                     case 21:
-                                        echo '<li><a href="chat/27/chats.php?id=27">ELIZABETH UBALDO CARDOSO</a></li>';
-                                        echo '<li><a href="chat/28/chats.php?id=28">ALMENDRA ISABEL MURILLO GUERRERO</a></li>';
+                                        echo '<li><a href="chat/all/chats.php?id=27">ELIZABETH UBALDO CARDOSO</a></li>';
+                                        echo '<li><a href="chat/all/chats.php?id=28">ALMENDRA ISABEL MURILLO GUERRERO</a></li>';
                                         break;
                                      case 22:
-                                        echo '<li><a href="chat/27/chats.php?id=27">ELIZABETH UBALDO CARDOSO</a></li>';
-                                        echo '<li><a href="chat/28/chats.php?id=28">ALMENDRA ISABEL MURILLO GUERRERO</a></li>';
+                                        echo '<li><a href="chat/all/chats.php?id=27">ELIZABETH UBALDO CARDOSO</a></li>';
+                                        echo '<li><a href="chat/all/chats.php?id=28">ALMENDRA ISABEL MURILLO GUERRERO</a></li>';
                                         break;
                                      case 23:
-                                        echo '<li><a href="chat/27/chats.php?id=27">ELIZABETH UBALDO CARDOSO</a></li>';
-                                        echo '<li><a href="chat/28/chats.php?id=28">ALMENDRA ISABEL MURILLO GUERRERO</a></li>';
+                                        echo '<li><a href="chat/all/chats.php?id=27">ELIZABETH UBALDO CARDOSO</a></li>';
+                                        echo '<li><a href="chat/all/chats.php?id=28">ALMENDRA ISABEL MURILLO GUERRERO</a></li>';
                                         break;
                                      case 24:
-                                        echo '<li><a href="chat/29/chats.php?id=29">ALMA OFELIA QUINTANA FLORES</a></li>';
-                                        echo '<li><a href="chat/30/chats.php?id=30">GABRIELA HERNANDEZ GUTIERREZ</a></li>';
+                                        echo '<li><a href="chat/all/chats.php?id=29">ALMA OFELIA QUINTANA FLORES</a></li>';
+                                        echo '<li><a href="chat/all/chats.php?id=30">GABRIELA HERNANDEZ GUTIERREZ</a></li>';
                                         break;
                                     case 25:
-                                        echo '<li><a href="chat/29/chats.php?id=29">ALMA OFELIA QUINTANA FLORES</a></li>';
-                                        echo '<li><a href="chat/30/chats.php?id=30">GABRIELA HERNANDEZ GUTIERREZ</a></li>';
+                                        echo '<li><a href="chat/all/chats.php?id=29">ALMA OFELIA QUINTANA FLORES</a></li>';
+                                        echo '<li><a href="chat/all/chats.php?id=30">GABRIELA HERNANDEZ GUTIERREZ</a></li>';
                                         break;
                                     case 26:
-                                        echo '<li><a href="chat/29/chats.php?id=29">ALMA OFELIA QUINTANA FLORES</a></li>';
-                                        echo '<li><a href="chat/30/chats.php?id=30">GABRIELA HERNANDEZ GUTIERREZ</a></li>';
+                                        echo '<li><a href="chat/all/chats.php?id=29">ALMA OFELIA QUINTANA FLORES</a></li>';
+                                        echo '<li><a href="chat/all/chats.php?id=30">GABRIELA HERNANDEZ GUTIERREZ</a></li>';
                                         break;
                                     case 27:
-                                        echo '<li><a href="chat/31/chats.php?id=31">MARIA DE LOURDES RAMIREZ RUIZ</a></li>';
-                                        echo '<li><a href="chat/32/chats.php?id=32">AIDA INDA RODRIGUEZ</a></li>';
+                                        echo '<li><a href="chat/all/chats.php?id=31">MARIA DE LOURDES RAMIREZ RUIZ</a></li>';
+                                        echo '<li><a href="chat/all/chats.php?id=32">AIDA INDA RODRIGUEZ</a></li>';
                                         break;
                                     case 28:
-                                        echo '<li><a href="chat/31/chats.php?id=31">MARIA DE LOURDES RAMIREZ RUIZ</a></li>';
-                                        echo '<li><a href="chat/32/chats.php?id=32">AIDA INDA RODRIGUEZ</a></li>';
+                                        echo '<li><a href="chat/all/chats.php?id=31">MARIA DE LOURDES RAMIREZ RUIZ</a></li>';
+                                        echo '<li><a href="chat/all/chats.php?id=32">AIDA INDA RODRIGUEZ</a></li>';
                                         break;
                                     case 29:
-                                        echo '<li><a href="chat/31/chats.php?id=31">MARIA DE LOURDES RAMIREZ RUIZ</a></li>';
-                                        echo '<li><a href="chat/32/chats.php?id=32">AIDA INDA RODRIGUEZ</a></li>';
+                                        echo '<li><a href="chat/all/chats.php?id=31">MARIA DE LOURDES RAMIREZ RUIZ</a></li>';
+                                        echo '<li><a href="chat/all/chats.php?id=32">AIDA INDA RODRIGUEZ</a></li>';
                                         break;
 
                                 }
