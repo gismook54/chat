@@ -1,0 +1,36 @@
+/*
+Error: Inconsistent indentation: 1 tab was used for indentation, but the rest of the document was indented using 4 spaces.
+        on line 52 of C:\wamp64\www\forester\sistema\fo\src\jquery.fileuploader.sass
+
+47: $icon-file: "PHN2ZyB3aWR0aD0iNDkiIGhlaWdodD0iNjQiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgcHJlc2VydmVBc3BlY3RSYXRpbz0ieE1pZFlNaWQiPiA8Zz4gIDx0aXRsZT5iYWNrZ3JvdW5kPC90aXRsZT4gIDxyZWN0IGZpbGw9Im5vbmUiIGlkPSJjYW52YXNfYmFja2dyb3VuZCIgaGVpZ2h0PSI0MDIiIHdpZHRoPSI1ODIiIHk9Ii0xIiB4PSItMSIvPiA8L2c+IDxnPiAgPHRpdGxlPkxheWVyIDE8L3RpdGxlPiAgPHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBmaWxsPSIjYmJjYWNmIiBpZD0ic3ZnXzIiIGQ9Im00OSwxNi44NDJsMCw0Mi4xMDVjMCwyLjc5MSAtMi4yNyw1LjA1MyAtNS4wNjksNS4wNTNsLTM4Ljg2MiwwYy0yLjgsMCAtNS4wNjksLTIuMjYyIC01LjA2OSwtNS4wNTNsMCwtNTMuODk0YzAsLTIuNzkxIDIuMjY5LC01LjA1MyA1LjA2OSwtNS4wNTNsMjcuMDM0LDBsMTYuODk3LDE2Ljg0MnoiIGNsYXNzPSJjbHMtMSIvPiAgPHBhdGggZmlsbD0iI2RmZWFlZSIgZmlsbC1ydWxlPSJldmVub2RkIiBpZD0ic3ZnXzQiIGQ9Im00OSwxNS44OTlsMCwyLjA5NmwtMTMuODEzLDBjLTIuODYsMCAtNC4xNzksLTIuMzIgLTQuMTc5LC01LjE4MWwwLC0xMi44MTRsMi4wOTIsMGwxNS45LDE1Ljg5OXoiIGNsYXNzPSJjbHMtMyIvPiA8L2c+PC9zdmc+";
+48: 
+49: // Mixins
+50: @mixin gradient-background($from, $to, $degrees: -45deg) {
+51:     background: $to;
+52: 	background: -moz-linear-gradient($degrees, $from 0%, $to 100%);
+53: 	background: -webkit-linear-gradient($degrees, $from 0%, $to 100%);
+54: 	background: linear-gradient(180deg + $degrees, $from 0%, $to 100%);
+55: }
+56: @mixin fileuploader-range-track() {
+57:     width: 100%;
+
+Backtrace:
+C:\wamp64\www\forester\sistema\fo\src\jquery.fileuploader.sass:52
+C:/Program Files/Adobe/Adobe Dreamweaver CC 2019/ruby/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/engine.rb:494:in `block in tabulate'
+C:/Program Files/Adobe/Adobe Dreamweaver CC 2019/ruby/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/engine.rb:452:in `each'
+C:/Program Files/Adobe/Adobe Dreamweaver CC 2019/ruby/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/engine.rb:452:in `each_with_index'
+C:/Program Files/Adobe/Adobe Dreamweaver CC 2019/ruby/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/engine.rb:452:in `tabulate'
+C:/Program Files/Adobe/Adobe Dreamweaver CC 2019/ruby/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/engine.rb:417:in `_to_tree'
+C:/Program Files/Adobe/Adobe Dreamweaver CC 2019/ruby/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/engine.rb:290:in `render'
+C:/Program Files/Adobe/Adobe Dreamweaver CC 2019/ruby/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/exec/sass_scss.rb:400:in `run'
+C:/Program Files/Adobe/Adobe Dreamweaver CC 2019/ruby/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/exec/sass_scss.rb:63:in `process_result'
+C:/Program Files/Adobe/Adobe Dreamweaver CC 2019/ruby/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/exec/base.rb:52:in `parse'
+C:/Program Files/Adobe/Adobe Dreamweaver CC 2019/ruby/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/exec/base.rb:19:in `parse!'
+C:/Program Files/Adobe/Adobe Dreamweaver CC 2019/ruby/lib/ruby/gems/2.4.0/gems/sass-3.5.3/bin/sass:13:in `<top (required)>'
+C:/Program Files/Adobe/Adobe Dreamweaver CC 2019/ruby/bin/sass:23:in `load'
+C:/Program Files/Adobe/Adobe Dreamweaver CC 2019/ruby/bin/sass:23:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Inconsistent indentation: 1 tab was used for indentation, but the rest of the document was indented using 4 spaces.\A         on line 52 of C:\wamp64\www\forester\sistema\fo\src\jquery.fileuploader.sass\A \A 47: $icon-file: \"PHN2ZyB3aWR0aD0iNDkiIGhlaWdodD0iNjQiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgcHJlc2VydmVBc3BlY3RSYXRpbz0ieE1pZFlNaWQiPiA8Zz4gIDx0aXRsZT5iYWNrZ3JvdW5kPC90aXRsZT4gIDxyZWN0IGZpbGw9Im5vbmUiIGlkPSJjYW52YXNfYmFja2dyb3VuZCIgaGVpZ2h0PSI0MDIiIHdpZHRoPSI1ODIiIHk9Ii0xIiB4PSItMSIvPiA8L2c+IDxnPiAgPHRpdGxlPkxheWVyIDE8L3RpdGxlPiAgPHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBmaWxsPSIjYmJjYWNmIiBpZD0ic3ZnXzIiIGQ9Im00OSwxNi44NDJsMCw0Mi4xMDVjMCwyLjc5MSAtMi4yNyw1LjA1MyAtNS4wNjksNS4wNTNsLTM4Ljg2MiwwYy0yLjgsMCAtNS4wNjksLTIuMjYyIC01LjA2OSwtNS4wNTNsMCwtNTMuODk0YzAsLTIuNzkxIDIuMjY5LC01LjA1MyA1LjA2OSwtNS4wNTNsMjcuMDM0LDBsMTYuODk3LDE2Ljg0MnoiIGNsYXNzPSJjbHMtMSIvPiAgPHBhdGggZmlsbD0iI2RmZWFlZSIgZmlsbC1ydWxlPSJldmVub2RkIiBpZD0ic3ZnXzQiIGQ9Im00OSwxNS44OTlsMCwyLjA5NmwtMTMuODEzLDBjLTIuODYsMCAtNC4xNzksLTIuMzIgLTQuMTc5LC01LjE4MWwwLC0xMi44MTRsMi4wOTIsMGwxNS45LDE1Ljg5OXoiIGNsYXNzPSJjbHMtMyIvPiA8L2c+PC9zdmc+\";\A 48: \A 49: // Mixins\A 50: @mixin gradient-background($from, $to, $degrees: -45deg) {\A 51:     background: $to;\A 52: 	background: -moz-linear-gradient($degrees, $from 0%, $to 100%);\A 53: 	background: -webkit-linear-gradient($degrees, $from 0%, $to 100%);\A 54: 	background: linear-gradient(180deg + $degrees, $from 0%, $to 100%);\A 55: }\A 56: @mixin fileuploader-range-track() {\A 57:     width: 100%;"; }
