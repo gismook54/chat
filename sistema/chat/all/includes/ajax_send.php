@@ -26,11 +26,12 @@
 					{
 						$class = "client";
 						$user_id = $_SESSION['id_user'];	
-						$username = $chat->client;
+						$username = $_SESSION['user_name'];
 					} elseif($message_id['user_id'] == $_SESSION['jChat_with']) {
 						$class = "server";
 						$user_id = 	$_SESSION['jChat_with'];
 						$username = $chat->server;
+						
 					}	
 				}
 			}

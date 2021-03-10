@@ -17,11 +17,11 @@
 		if($message == null)
 		{
 			$class = 'client';
-			$user_id = $chat->clientID;
-			$username = $chat->client;
+			$user_id = $_SESSION['id_user'];
+			$username = $_SESSION['user_name'];
 		} else {
 			$class = 'server';
-			$user_id = $chat->serverID;
+			$user_id = $_SESSION['jChat_with'];
 			$username = $chat->server;
 		}
 		

@@ -15,14 +15,14 @@
 		{
 			foreach($messages_ids as $message_id)
 			{	
-				if($message_id['user_id'] == $chat->clientID)
+				if($message_id['user_id'] == $_SESSION['id_user'])
 				{
 					$class = "client";
-					$user_id = $chat->clientID;	
-					$username = $chat->client;
-				} elseif($message_id['user_id'] == $chat->serverID) {
+					$user_id = $_SESSION['id_user'];	
+					$username = $_SESSION['user_name'];
+				} elseif($message_id['user_id'] == $_SESSION['jChat_with']) {
 					$class = "server";
-					$user_id = 	$chat->serverID;
+					$user_id = 	$_SESSION['jChat_with'];
 					$username = $chat->server;
 				}
 				
