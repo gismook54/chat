@@ -13,7 +13,7 @@
 		$message_set_id = $chat->set_message($_POST['message']);
 				
 		// Get Messages
-		$messages_ids = $chat->get_messages_id($chat->clientID, $chat->serverID);
+		$messages_ids = $chat->get_messages_id($_SESSION['id_user'], $_SESSION['jChat_with']);
 
 		// Check if is client or server
 		if(!empty($messages_ids))
@@ -22,14 +22,14 @@
 			{	
 				if($message_id['id'] == $message_set_id)
 				{
-					if($message_id['user_id'] == $chat->clientID)
+					if($message_id['user_id'] == $_SESSION['id_user'])
 					{
 						$class = "client";
-						$user_id = $chat->clientID;	
+						$user_id = $_SESSION['id_user'];	
 						$username = $chat->client;
-					} elseif($message_id['user_id'] == $chat->serverID) {
+					} elseif($message_id['user_id'] == $_SESSION['jChat_with']) {
 						$class = "server";
-						$user_id = 	$chat->serverID;
+						$user_id = 	$_SESSION['jChat_with'];
 						$username = $chat->server;
 					}	
 				}

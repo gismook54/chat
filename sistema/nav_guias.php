@@ -38,7 +38,7 @@
             </li>
             
             <li><a class="<?php if($menu == '2'){ echo 'active';}; ?>" href="alumnos.php"><i class="si si-emoticon-smile"></i>Alumnos</a></li>
-            <li><a class="<?php if($menu == '5'){ echo 'active';}; ?>" href="chat/<?php echo $_SESSION['id_user'] ?>/"><i class="si si-bubbles"></i>Chat</a></li>
+            <li><a class="<?php if($menu == '5'){ echo 'active';}; ?>" href="chat/all/"><i class="si si-bubbles"></i>Chat</a></li>
         </ul>
     </div>
 </div>

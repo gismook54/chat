@@ -12,7 +12,7 @@
 	{ 
 		// Get Last Message
 		$message = $chat->get_last_message_with($_POST['id']);
-		$count = $chat->get_unread_messages($_POST['id'], $chat->clientID);
+		$count = $chat->get_unread_messages($_POST['id'], $_SESSION['id_user']);
 
 		if($message == null)
 		{

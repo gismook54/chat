@@ -251,7 +251,7 @@
 					WHERE user_id = %s AND receiver = %s AND storage_b != 0
 					ORDER BY id DESC LIMIT 1", 
 					$this->connection->escape($id),
-					$this->connection->escape($this->clientID)
+					$this->connection->escape($_SESSION['id_user'])
 					)
 			);
 			
@@ -349,7 +349,7 @@
 		/////////////////////////////////////////////////////////
 		public function get_unread_messages($serverID, $clientID)
 		{
-			$this->result =  $this->connection->query(sprintf("SELECT id FROM $this->table WHERE status = '%s' AND user_id = %s AND receiver = %s", 'unread',  $this->connection->escape($serverID),  $this->connection->escape($clientID)));
+			$this->result =  $this->connection->query(sprintf("SELECT id FROM $this->table WHERE status = '%s' AND user_id = %s AND receiver = %s", 'unread',  $this->connection->escape($_SESSION['jChat_with']),  $this->connection->escape($_SESSION['id_user'])));
 			
 			$result = $this->connection->num_rows($this->result);
 			
@@ -404,10 +404,10 @@
 							  attachment = '%s'
 						", 
 						  $this->connection->escape(htmlentities($message, ENT_COMPAT, 'UTF-8')),
-						  $this->connection->escape($this->clientID),
-						  $this->connection->escape($this->serverID),
-						  $this->connection->escape($this->clientID),
-						  $this->connection->escape($this->serverID),
+						  $this->connection->escape($_SESSION['id_user']),
+						  $this->connection->escape($_SESSION['jChat_with']),
+						  $this->connection->escape($_SESSION['id_user']),
+						  $this->connection->escape($_SESSION['jChat_with']),
 						  $this->connection->escape($attachment)
 				)
 			);

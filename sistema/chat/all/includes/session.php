@@ -80,23 +80,23 @@
 	{
 		$c = new connectMe(DB_HOST, DB_USERNAME, DB_PASSWORD, DATABASE);
 		
-		var_dump($_SESSION['id_user']);
-
 		$username = $_SESSION['jChat_username'];
-	
+		
 		if(isset($username))
 		{	
-			$query = $c->query("SELECT usersg1.chat_id as id, usersg1.username FROM usersg1 WHERE username = '{$_SESSION['id_user']}'");
 			
-			echo 'quer';
+			if(!isset($_SESSION['grupo_guia'])){
+				$query = $c->query("SELECT id, name as username FROM guias WHERE id = '{$_SESSION['jChat_with']}'");
+			}else{
+				$query = $c->query("SELECT id, name as username FROM alumnos WHERE id = '{$_SESSION['jChat_with']}'");
+			}
+			
+			
 			while($row = $c->fetch_row($query))
 			{
-				echo 'row';
-				var_dump($row);
 				//get logged user id and username
 				$users_username = $row['username'];
 				$users_id = $row['id'];
-
 				
 			}
 			
