@@ -48,8 +48,6 @@
 	// Register Logged in user and the one he is chatting here (Client & Server)
 	if(isset($_SESSION['jChat_authenticated']) && $_SESSION['jChat_authenticated'] == true)
 	{
-		echo 'ID';
-		var_dump(get_user("ID"));
 		$chat->clientID = get_user("ID"); // logged user id
 		$chat->client = ucfirst(get_user("USERNAME")); // logged username
 	}
