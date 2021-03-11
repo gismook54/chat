@@ -28,9 +28,9 @@
 	///////////////////////////////////////////////////////////////
 	
 	// Register Database Username Fields
-	$chat->users_table = 'usersg1'; // the users table
-	$chat->users_usernameField = 'username'; // the username field from users table
-	$chat->user_idField = 'chat_id'; // the id (primary key, auto-incremented) field for the users table
+	$chat->users_table = $_SESSION['grupo_guia'] ? 'alumnos' : 'guias'; // the users table
+	$chat->users_usernameField = 'name'; // the username field from users table
+	$chat->user_idField = 'id'; // the id (primary key, auto-incremented) field for the users table
 	
 	if(isset($_GET['id']))
 	{
