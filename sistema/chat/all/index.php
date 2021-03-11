@@ -112,13 +112,14 @@ $guiaGrupo = $_SESSION['grupo_guia'];
                     <h2 class="content-heading"><i class="si si-users"></i>&nbsp;SALA DE  CHAT</h2>
                        
                     <div class="row">
-                    <?php foreach($chat->get_users($chat->clientID) as $user) { ?>
+                    <?php 
+                    foreach($chat->get_students($chat->clientID) as $user) { ?>
                         <?php
-							$user_id = $user[$chat->user_idField];
+							$user_id = $user['id'];
 							$user_name = $user[$chat->users_usernameField];
-							$status = $user['status'];
+							$status = $user['group_name'] . ' - ' . $user['group_grade'] . ' ' . $user['group_name_abc'];
 							
-							$new_message = $chat->get_unread_messages($user_id, $chat->clientID);
+							$new_message = $chat->get_new_unread_messages($user_id, $chat->clientID);
 							if($new_message == 0)
 							{
 								$message_appender = '';

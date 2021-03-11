@@ -301,6 +301,28 @@
 				return false;	
 			}	
 		}
+
+		public function get_students($clientId)
+		{
+			// Result Query
+			$this->result =  $this->connection->query(sprintf("SELECT * FROM guias where id = $clientId"));
+			if($this->result) 
+			{
+				$guia = $this->results($this->result);
+				$guia = $guia[0];
+				$this->result2 =  $this->connection->query(sprintf("SELECT a.*, g.name as group_name, g.ngroup as group_name_abc, g.ngrade as group_grade FROM alumnos a, grupos g where a.ngrupo IN (".$guia['idgrupo'].") AND a.ngrupo = g.id"));
+
+				if($this->result2){
+					return $this->results($this->result2);
+				}else{
+					return false;
+				}
+
+				return $this->results($this->result);
+			} else {
+				return false;	
+			}	
+		}
 		
 		//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 		// Get users from users table excluding the logged user because it does not makes sense chatting or messaging to yourself
@@ -359,6 +381,14 @@
 			} else {
 				return $result;	
 			}
+		}
+
+		public function get_new_unread_messages($serverID, $clientID)
+		{
+			$this->result =  $this->connection->query(sprintf("SELECT id FROM messages WHERE status = '%s' AND user_id = %s AND receiver = %s", 'unread',  $this->connection->escape($serverID),  $this->connection->escape($clientID)));
+			
+			return $this->connection->num_rows($this->result);
+		
 		}
 		
 		//////////////////////////////////////////////////////////
