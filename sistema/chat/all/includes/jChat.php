@@ -390,6 +390,14 @@
 			return $this->connection->num_rows($this->result);
 		
 		}
+
+		public function get_guias($groupId)
+		{
+			
+			$this->result =  $this->connection->query("SELECT id, name FROM guias WHERE estatus = 1 AND idgrupo LIKE '%".$this->connection->escape($groupId)."%'");
+			return $this->results($this->result);
+		
+		}
 		
 		//////////////////////////////////////////////////////////
 		// Get current user session
