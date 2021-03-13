@@ -242,7 +242,7 @@ function getParameterByName(name) {
 									
 									}, opt.waitRefresh);
 																		
-									$('#text-input-field').val('');
+									$('.emoji-wysiwyg-editor').html('');
 								});
 																
 							 }
