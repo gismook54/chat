@@ -407,7 +407,8 @@
 		public function get_guias($groupId)
 		{
 			
-			$this->result =  $this->connection->query("SELECT id, name FROM guias WHERE estatus = 1 AND idgrupo LIKE '%".$this->connection->escape($groupId)."%'");
+			$this->result =  $this->connection->query("SELECT id, name FROM guias WHERE estatus = 1 AND find_in_set('".$this->connection->escape($groupId)."',idgrupo) <> 0");
+			//$this->result =  $this->connection->query("SELECT id, name FROM guias WHERE estatus = 1 AND idgrupo LIKE '%".$this->connection->escape($groupId)."%'");
 			return $this->results($this->result);
 		
 		}
