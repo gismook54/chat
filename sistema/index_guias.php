@@ -3,6 +3,8 @@
 $groups = explode(",", $_SESSION['grupo_guia']);
 $idGuia = $_SESSION['id_user'];
 
+$totalAlumnos = 0;
+$totalActGrup = 0;
 
 foreach($groups as $group) {
   
