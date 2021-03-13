@@ -201,9 +201,9 @@
 					$isgif2 = strpos($results['0']['attachment'], '.gif');
 
 					if($ispng || $ispng2 || $isjpg || $isjpg2 || $isgif || $isgif2){
-						$message .= '<br /><img style="width:50%" src="/sistema/chat/all/'.$results['0']['attachment'].'" />';	
+						$message .= '<br /><img style="width:50%" src="../all/'.$results['0']['attachment'].'" />';	
 					}else{
-						$message .= '<br /> <a href="/sistema/chat/all/'.$results['0']['attachment'].'" download>Descargar '.$results['0']['attachment'].'</a>';	
+						$message .= '<br /> <a href="../all/'.$results['0']['attachment'].'" download>Descargar '.$results['0']['attachment'].'</a>';	
 					}
 
 					
