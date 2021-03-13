@@ -5,7 +5,7 @@ if(!logged_in()){
 }
 
 $tipoUsuario = $_SESSION['typo_user'];
-$guiaGrupo = $_SESSION['grupo_guia'];
+$guiaGrupo = isset($_SESSION['grupo_guia']) ? $_SESSION['grupo_guia'] : false;
 
 $menu = 0;
 

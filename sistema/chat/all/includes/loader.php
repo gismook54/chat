@@ -1,5 +1,9 @@
 <?php
-	session_start();
+
+	if(session_id() == ''){
+		//session has not started
+		session_start();
+	}
 
 	ob_start(); 
 	
