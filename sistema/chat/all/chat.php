@@ -59,6 +59,12 @@ $guiaGrupo = $_SESSION['grupo_guia'];
         #new-chat .fa{
            font-size:  34px;
         }
+
+        #new-chat .input-file{
+            margin-top: 11px;
+        }
+
+
     </style>
 
 
@@ -195,14 +201,15 @@ $guiaGrupo = $_SESSION['grupo_guia'];
                         <div class="row">
                             <div class="col-10">
                                 <textarea name="message-entry" id="text-input-field" cols="30" rows="2" class="input-message-text" data-emojiable="true"></textarea>
-                               
                             </div>
                             <div class="col-2">
                                 <input type="submit" name="send-message" id="sendMessage" class="btn btn-lg btn-primary btn-send-message"
                                     value="Enviar" />
                             </div>
-
-
+                            
+                        </div>
+                        <div class="row">
+                            <div class="col-12"><input id="uploadFile" class="input-file" type="file" accept="*" name="image" /></div>
                         </div>
 
 

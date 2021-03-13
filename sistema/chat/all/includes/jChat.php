@@ -421,13 +421,37 @@
 		* Write Context
 		*******************************************************************/
 		
+		public function upload_file($file){
+
+			$filename = $file['name'];
+			
+			/* Location */
+			$new_filename = time().'-'.$filename;
+			$location = '../files/'.$new_filename;
+			$imageFileType = pathinfo($location,PATHINFO_EXTENSION);
+			$imageFileType = strtolower($imageFileType);
+	
+			if(move_uploaded_file($file['tmp_name'],$location)){
+				$response = $location;
+				$response = 'files/'.$new_filename;
+				return $response;
+			}else{
+				return false;
+			}
+		
+		}
+
 		///////////////////////////////////////
 		// Set Messages
 		/////////////////////////////////////
-		public function set_message($message)
+		public function set_message($message, $attachment_file = false)
 		{
 			
 			$attachment = 'false';
+
+			if($attachment_file){
+				$attachment = $attachment_file;
+			}
 			
 			$this->result =  $this->connection->query(
 				sprintf("INSERT INTO $this->table

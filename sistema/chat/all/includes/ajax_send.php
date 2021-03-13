@@ -8,9 +8,14 @@
 	
 	if(isset($_POST['message']))
 	{		
+
+		if(isset($_FILES['file']['name'])){	
+			$file_location = $chat->upload_file($_FILES['file']);
+		}
+
 		// Insert Message
 		$message = $_POST['message'];
-		$message_set_id = $chat->set_message($_POST['message']);
+		$message_set_id = $chat->set_message($_POST['message'], $file_location);
 				
 		// Get Messages
 		$messages_ids = $chat->get_messages_id($_SESSION['id_user'], $_SESSION['jChat_with']);
@@ -45,5 +50,7 @@
 		
 		$chat->set_messages_read($_SESSION['jChat_with']);
 	}
+
+	
 	
 ?>

@@ -230,19 +230,43 @@ function getParameterByName(name) {
 			chat.sendMessage = function()
 							 {
 								var message_entry = $('#text-input-field').val();
-								var construct = { message: message_entry, id: getParameterByName('id') };
 								
-								$.post(opt.ajaxSendMessage, construct, function(response)
-								{
-									setTimeout(function() {
-										$("ul.messages-layout").append(response);
+
+								var input = document.getElementById('uploadFile');
+								var files = $('#uploadFile')[0].files;
+								console.log(files);
+								
+								var fd = new FormData();
+								var fileUpload = false;
+
+								if(files.length > 0){
+									console.log(' si tengo archivos');
+									fd.append('file',files[0]);
+								}
+
+								fd.append('message',message_entry);
+								fd.append('id', getParameterByName('id'));
+
+								var construct = { message: message_entry, id: getParameterByName('id'), file: fileUpload };
+
+								$.ajax({
+									url : opt.ajaxSendMessage,
+									type: "POST",
+									cache: false,
+									contentType: false,
+									processData: false,
+									data : fd,
+									success: function(response){
+										setTimeout(function() {
+											$("ul.messages-layout").append(response);
+											
+											toScroll = $("ul.messages-layout");
+											$("ul.messages-layout").animate({ scrollTop: toScroll[0].scrollHeight }, 'fast');
 										
-										toScroll = $("ul.messages-layout");
-										$("ul.messages-layout").animate({ scrollTop: toScroll[0].scrollHeight }, 'fast');
-									
-									}, opt.waitRefresh);
-																		
-									$('.emoji-wysiwyg-editor').html('');
+										}, opt.waitRefresh);
+																			
+										$('.emoji-wysiwyg-editor').html('');
+									}
 								});
 																
 							 }
