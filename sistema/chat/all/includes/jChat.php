@@ -188,7 +188,7 @@
 			if($this->result) 
 			{
 				// Emoticons
-				$message = str_replace(array_keys($this->emoticons), array_values($this->emoticons), $results['0']['messages']);
+				$message = str_replace(array_keys($this->emoticons), array_values($this->emoticons), utf8_decode($results['0']['messages']));
 				
 				// Attachments
 				if($results['0']['attachment'] !== 'false')
@@ -441,7 +441,7 @@
 							  status = 'unread',
 							  attachment = '%s'
 						", 
-						  $this->connection->escape(htmlentities($message, ENT_COMPAT, 'UTF-8')),
+						  utf8_encode($message),
 						  $this->connection->escape($_SESSION['id_user']),
 						  $this->connection->escape($_SESSION['jChat_with']),
 						  $this->connection->escape($_SESSION['id_user']),
