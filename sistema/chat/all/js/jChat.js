@@ -266,6 +266,7 @@ function getParameterByName(name) {
 										}, opt.waitRefresh);
 																			
 										$('.emoji-wysiwyg-editor').html('');
+										$('#uploadFile').val('');
 									}
 								});
 																

@@ -29,43 +29,6 @@ $guiaGrupo = $_SESSION['grupo_guia'];
     <link href="css/user_css.css" rel="stylesheet" media="screen" type="text/css" />
     <link rel="stylesheet" id="css-main" href="../../../assets/css/codebase.min.css">
 
-    <style>
-        #new-chat.box {
-            width: 65%;
-            margin-left: auto;
-            margin-right: auto;
-            margin-bottom: 200px;
-        }
-
-        #new-chat .input-message-text {
-           border-color: #343a40;
-        }
-
-        #new-chat .content {
-            width: 100% !important;
-            padding: 15px;
-        }
-
-        #new-chat .btn-send-message{
-            margin-left: -10px;
-            margin-top: 3px;
-        }
-
-        #new-chat .emoji-picker-icon{
-            right: 24px;
-            top: 6px;
-        }
-
-        #new-chat .fa{
-           font-size:  34px;
-        }
-
-        #new-chat .input-file{
-            margin-top: 11px;
-        }
-
-
-    </style>
 
 
 </head>
