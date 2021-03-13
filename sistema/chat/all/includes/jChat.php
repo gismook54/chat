@@ -193,7 +193,20 @@
 				// Attachments
 				if($results['0']['attachment'] !== 'false')
 				{
-					$message .= '<br /><img src="'.$this->attachmentPath.$results['0']['attachment'].'" />';	
+					$ispng = strpos($results['0']['attachment'], '.png');
+					$ispng2 = strpos($results['0']['attachment'], '.PNG');
+					$isjpg = strpos($results['0']['attachment'], '.jpg');
+					$isjpg2 = strpos($results['0']['attachment'], '.JPG');
+					$isgif = strpos($results['0']['attachment'], '.GIF');
+					$isgif2 = strpos($results['0']['attachment'], '.gif');
+
+					if($ispng || $ispng2 || $isjpg || $isjpg2 || $isgif || $isgif2){
+						$message .= '<br /><img style="width:50%" src="/sistema/chat/all/'.$results['0']['attachment'].'" />';	
+					}else{
+						$message .= '<br /> <a href="/sistema/chat/all/'.$results['0']['attachment'].'" download>Descargar '.$results['0']['attachment'].'</a>';	
+					}
+
+					
 				}
 				
 				return $message;
