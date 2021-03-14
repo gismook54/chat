@@ -1,7 +1,8 @@
 <?php
 
 
-  
+$totalAlumnos = 0;
+$totalActGrup = 0;
     
 $sqlta = "SELECT COUNT(id) AS totala FROM `alumnos`";
 $resulta = query($sqlta);
