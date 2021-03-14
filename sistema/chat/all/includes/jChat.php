@@ -525,24 +525,25 @@
 		// Set User Session Status
 		///////////////////////////////////////////////////////////
 		public function set_user_sessionStatus($clientID, $status)
-		{
+		{	
+			$clientID = $_SESSION['id_user'];
 			switch($status)
 			{
 				case "ONLINE":
 					
-					$this->result =  $this->connection->query(sprintf("SELECT session FROM $this->users_table WHERE $this->user_idField = '%s'",  $this->connection->escape($clientID)));
+					$this->result =  $this->connection->query(sprintf("SELECT session FROM alumnos WHERE id = '%s'",  $this->connection->escape($clientID)));
 					
 					$is_online =  $this->connection->fetch_row($this->result); 
 										
 					if($is_online['session'] == 'offline') // not online set online
 					{
 						$this->result =  $this->connection->query(
-							sprintf("UPDATE $this->users_table
+							sprintf("UPDATE alumnos
 										SET 
 										  session = '%s',
 										  session_time = NOW()
 										WHERE
-										  $this->user_idField = %s
+										  id = %s
 									", 
 									'online',
 									  $this->connection->escape($clientID) 
@@ -564,12 +565,12 @@
 				case "OFFLINE":
 				
 					$this->result =  $this->connection->query(
-						sprintf("UPDATE $this->users_table
+						sprintf("UPDATE alumnos
 									SET 
 									  session = '%s',
 									  session_time = NOW()
 									WHERE
-									  $this->user_idField = %s
+									  id = %s
 								", 
 								'offline',
 								  $this->connection->escape($clientID) 
@@ -588,12 +589,12 @@
 				case "BACK_ONLINE":
 				
 					$this->result =  $this->connection->query(
-						sprintf("UPDATE $this->users_table
+						sprintf("UPDATE alumnos
 									SET 
 									  session = '%s',
 									  session_time = NOW()
 									WHERE
-									  $this->user_idField = %s
+									  id = %s
 								", 
 								'online',
 								  $this->connection->escape($clientID) 
