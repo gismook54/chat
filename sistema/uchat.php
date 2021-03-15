@@ -1,4 +1,4 @@
-<?php include("../inc/init.php");
+<?php  include("../inc/init.php");
 if(!logged_in()){
 
     redirect("../");
@@ -7,9 +7,9 @@ if(!logged_in()){
 $menu = 5;
 $tipoUsuario = $_SESSION['typo_user'];
 //$guiaGrupo = $_SESSION['grupo_guia'];
-$groups = explode(",", $_SESSION['grupo_guia']);
-$server_ID = $_SESSION['jChat_with'];
-$server_USERNAME = $_SESSION['jChat_with'];
+$groups = explode(",", isset($_SESSION['grupo_guia']) ? $_SESSION['grupo_guia'] : '' );
+$server_ID = isset($_SESSION['jChat_with']) ? $_SESSION['jChat_with'] : 0;
+$server_USERNAME = isset($_SESSION['jChat_with']) ? $_SESSION['jChat_with'] : 0;
 
 ?>
 <!DOCTYPE html>
