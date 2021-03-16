@@ -1,8 +1,8 @@
 <?php
 
 //$con = mysqli_connect('localhost', 'root', '83W8tlzOaRmN4QcO', 'foresterm_bdd');
-//$con = mysqli_connect('localhost', 'fcom_covid', '#eYfs08IJ6cw*2020', 'admin_fordbc');
-$con = mysqli_connect('localhost', 'root', '', 'freelancer_admin_fordbc2');
+$con = mysqli_connect('localhost', 'fcom_covid', '#eYfs08IJ6cw*2020', 'admin_fordbc');
+//$con = mysqli_connect('localhost', 'root', '', 'freelancer_admin_fordbc2');
 $con->set_charset('utf8');
 
 
